@@ -129,9 +129,17 @@ YourChoice allows you to share and import choice boards as `.yourchoice` files:
 - Imported boards are stored locally on your device like any other board
 - Non-Pro users will have video/GIF media converted to static images and custom audio removed during import
 
+## Parental Gate
+
+YourChoice is designed for the Kids category on the App Store. To protect children from unintended actions, a parental verification gate (a simple math challenge) is required before:
+- Accessing the in-app purchase flow
+- Opening external links (such as the Privacy Policy)
+
+The parental gate runs entirely on-device. No data about gate attempts, successes, or failures is collected or transmitted.
+
 ## In-App Purchases
 
-YourChoice offers a one-time Pro upgrade ($1.99, family shareable) through Apple's App Store. Purchase transactions are processed entirely by Apple using StoreKit. We do not collect, store, or have access to any payment information, credit card details, or Apple ID data. The app only receives a confirmation from Apple that the purchase was completed.
+YourChoice offers a one-time Pro upgrade ($1.99, family shareable) through Apple's App Store. A parental verification gate must be completed before the purchase flow is accessible. Purchase transactions are processed entirely by Apple using StoreKit. We do not collect, store, or have access to any payment information, credit card details, or Apple ID data. The app only receives a confirmation from Apple that the purchase was completed.
 
 ## Data Storage and Security
 
