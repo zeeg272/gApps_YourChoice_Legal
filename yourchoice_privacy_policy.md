@@ -1,7 +1,7 @@
 # Privacy Policy for YourChoice
 
 **Effective Date:** October 14, 2025
-**Last Updated:** February 8, 2026
+**Last Updated:** February 11, 2026
 
 ## Our Privacy Commitment
 
@@ -37,14 +37,14 @@ YourChoice stores the following information locally on your iPhone or iPad. This
 - Optional custom audio recordings you attach to quick buttons
 - Usage timestamps
 
-#### 4. Usage Analytics (Always Active)
-YourChoice automatically collects the following interaction data locally on your device to provide usage insights in the Stats tab:
+#### 4. Usage Analytics (Pro Feature)
+When the Pro upgrade is active, YourChoice collects the following interaction data locally on your device to provide usage insights in the Stats tab:
 - Which boards you use most frequently
 - How many times choices are selected
 - Response times (how quickly choices are made)
 - When and how long the app is used (session data)
 - Board and choice names associated with each interaction
-- Quick button usage
+- Quick button and widget usage (including taps from the home screen widget)
 - Tap miss events (when taps land outside a choice button)
 
 **Important: All analytics data:**
@@ -60,6 +60,16 @@ YourChoice automatically collects the following interaction data locally on your
 - Board layout and sort order preferences
 - Active profile selection
 - Onboarding completion status
+- Custom background preferences (background type, color, or photo per screen)
+
+#### 6. Home Screen Widget Data
+YourChoice includes an optional home screen widget that displays your quick buttons for fast access. The widget stores the following data locally in a shared on-device App Group container:
+- Which quick buttons you have enabled for the widget
+- Quick button display information (titles, colors, symbols)
+- Last choice selection (to show feedback on the widget)
+- Pro unlock status (to determine available features)
+
+**Important:** The App Group container is an on-device shared storage area that allows the main app and its widget extension to access the same data. No data is transmitted over the network. Widget interactions (button taps) are logged as interaction events identical to in-app quick button taps and are included in your local usage analytics.
 
 ### Information We Do NOT Collect
 
@@ -144,7 +154,7 @@ YourChoice offers a one-time Pro upgrade ($1.99, family shareable) through Apple
 ## Data Storage and Security
 
 ### Local Storage
-All data is stored securely on your device using Apple's SwiftData framework and encrypted iOS storage. Your data is protected by your device's security features, including:
+All data is stored securely on your device using Apple's SwiftData framework and encrypted iOS storage. Data is shared between the main app and its home screen widget extension through an on-device App Group container — this sharing occurs entirely on your device and does not involve any network transmission. Your data is protected by your device's security features, including:
 - Device passcode/Face ID/Touch ID
 - iOS encryption
 - Secure storage containers
@@ -166,7 +176,7 @@ YourChoice does not:
 - Transmit your data to our servers
 - Use any third-party SDKs that collect data
 
-The app uses only Apple's built-in frameworks (SwiftUI, SwiftData, AVFoundation, StoreKit, Charts, PhotosUI). No third-party code is included. Your data stays on your device.
+The app uses only Apple's built-in frameworks (SwiftUI, SwiftData, AVFoundation, StoreKit, Charts, PhotosUI, WidgetKit, AppIntents). No third-party code is included. Your data stays on your device.
 
 ## Children's Privacy (COPPA Compliance)
 
@@ -241,6 +251,7 @@ When you delete YourChoice, all data is removed from your device, including:
 - All interaction event (analytics) data
 - All settings and preferences
 - All board folders and organization
+- The home screen widget and its shared data
 
 **Important:** Deleting the app permanently removes all data. We cannot recover it because we never had access to it.
 
@@ -297,6 +308,7 @@ For users with cognitive disabilities or those who need simplified explanations,
 
 ### Simple Summary
 - YourChoice keeps all your information on your phone or tablet
+- The home screen widget shares data with the app entirely on your device — nothing is sent over the internet
 - We never send your information anywhere
 - You control everything and can delete anything
 - Photos, videos, and audio you add stay on your device
